@@ -1,6 +1,6 @@
 # Wireshark-Packet-Capture-and-Protocol-Analysis
 
-# 🛡️ Cybersecurity Internship – Task 5  
+# 🛡️ Cybersecurity Internship – Task 5
 
 ---
 
@@ -91,3 +91,5 @@ filters:
 - Nmap revealed open ports and services
 - FTP and HTTP banners were captured
 - No UDP traffic (UDP scan was not used)
+
+---
