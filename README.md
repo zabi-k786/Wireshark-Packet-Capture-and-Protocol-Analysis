@@ -54,16 +54,28 @@ Metasploitable (192.168.134.132)
   ![Wireshark](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Wireshark.png)
   ![Wireshark_2](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Wireshark_2.png)
 
-  2️⃣ Generate Traffic from Kali to Metasploitable:
-    🔹 Ping the Target:
-      - command: ping 192.168.134.132
-      - description: "Generates ICMP Echo Request and Reply packets"
-      ![Ping Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/ping_scan.png)
+  ### 2️⃣ Generate Traffic from Kali to Metasploitable:
 
-    🔹 Scan Target with Nmap:
-      - command: nmap -sS -sV 192.168.134.132 -v -T3
-      - description: "Sends TCP SYN packets, detects service banners"
-      ![Nmap Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/nmap_scan.png)
+#### 🔹 Ping the Target:
+- **Command:**  
+  `ping 192.168.134.132`  
+- **Description:**  
+  Generates ICMP Echo Request and Reply packets
+
+📸 Screenshot:  
+![Ping Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/ping_scan.png)
+
+---
+
+#### 🔹 Scan Target with Nmap:
+- **Command:**  
+  `nmap -sS -sV 192.168.134.132 -v -T3`  
+- **Description:**  
+  Sends TCP SYN packets, detects service banners
+
+📸 Screenshot:  
+![Nmap Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/nmap_scan.png)
+
 
   3️⃣ Stop Packet Capture:
   
