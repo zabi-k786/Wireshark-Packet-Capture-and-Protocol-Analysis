@@ -35,6 +35,15 @@ Kali Linux (192.168.134.129)
 Metasploitable (192.168.134.132)
 
 ---
+📸 **Network Machines**  
+**Kali Linux VM**  
+![Kali Linux](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Kali_Linux.png)
+
+**Metasploitable VM**  
+![Metasploitable](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Metasploitable.png)
+
+---
+---
 
 🚀 Step-by-Step Guide:
 
@@ -42,18 +51,19 @@ Metasploitable (192.168.134.132)
     - command: sudo wireshark
     - interface: eth0
     - action: "Click the green shark fin to start capture"
-    - screenshot: images/Wireshark.png
+  ![Wireshark](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Wireshark.png)
+  ![Wireshark_2](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/Wireshark_2.png)
 
   2️⃣ Generate Traffic from Kali to Metasploitable:
     🔹 Ping the Target:
       - command: ping 192.168.134.132
       - description: "Generates ICMP Echo Request and Reply packets"
-      - screenshot: images/ping_scan.png
+      ![Ping Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/ping_scan.png)
 
     🔹 Scan Target with Nmap:
       - command: nmap -sS -sV 192.168.134.132 -v -T3
       - description: "Sends TCP SYN packets, detects service banners"
-      - screenshot: images/nmap_scan.png
+      ![Nmap Scan](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/nmap_scan.png)
 
   3️⃣ Stop Packet Capture:
   
@@ -70,19 +80,19 @@ Metasploitable (192.168.134.132)
 filters:
   - protocol: ICMP
     command: icmp && ip.addr == 192.168.134.132
-    screenshot: images/ICMP_Filter.png
+    ![ICMP Filter](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/ICMP_Filter.png)
 
   - protocol: TCP
     command: tcp && ip.addr == 192.168.134.132
-    screenshot: images/TCP_Filter.png
+    ![TCP Filter](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/TCP_Filter.png)
 
   - protocol: FTP
     command: ftp && ip.addr == 192.168.134.132
-    screenshot: images/FTP_Filter.png
+    ![FTP Filter](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/FTP_Filter.png)
 
   - protocol: HTTP
     command: http && ip.addr == 192.168.134.132
-    screenshot: images/HTTP_Filter.png
+    ![HTTP Filter](https://github.com/zabi-k786/Wireshark-Packet-Capture-and-Protocol-Analysis/blob/main/HTTP_Filter.png)
 ---
 
  Observations:
